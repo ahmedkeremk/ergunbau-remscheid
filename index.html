@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ergün Bau - Ihr Baupartner seit 2005</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Global Styles */
+        header, footer {
+            background-color: #d32f2f;
+            color: black;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 300px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 24px;
+            color: black;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #d32f2f;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .content-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Flexbox Layout for image and text */
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-text {
+            width: 50%;
+            font-size: 18px;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .about-image {
+            width: 40%;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about-image figcaption {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .services-list, .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .services-list li, .projects-list li {
+            background-color: #f4f4f4;
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 40px);
+            list-style-type: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .services-list li:hover, .projects-list li:hover {
+            background-color: #d32f2f;
+            color: white;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #d32f2f;
+        }
+
+        footer {
+            font-size: 14px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            /* Flexbox layout for smaller screens */
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-text, .about-image {
+                width: 100%;
+                text-align: center;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .services-list li, .projects-list li {
+                flex: 1 1 100%; /* Full width on smaller screens */
+            }
+
+            /* Reduce padding for smaller screens */
+            .container {
+                padding: 20px;
+            }
+
+            /* Adjusting footer and headers */
+            header p {
+                font-size: 20px;
+            }
+
+            footer p {
+                font-size: 12px;
+            }
+        }
+
+        /* Ensure images scale well on all screen sizes */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Remove excess margins and paddings */
+        .content-section {
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="ergun_bau_logo.jpg" alt="Ergün Bau Logo">
+        <p>Ihr Baupartner seit 2005 </p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">Über uns</a>
+        <a href="#services">Dienstleistungen</a>
+        <a href="#projects">Projekte</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section with image and updated text -->
+        <section id="about" class="content-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Über uns</h2>
+                    <p>Ergün Bau ist ein Wohnungsbauunternehmen aus Remscheid, das seit 2005 hochwertige Bauprojekte für ihr Zuhause realisiert. Mit über 15 Jahren Erfahrung bieten wir Lösungen für reichliche Bauvorhaben und legen besonderen Wert auf Qualität und Kundenzufriedenheit. Lassen Sie sich von unserer Arbeit überzeugen und verwirklichen Sie Ihr Bauvorhaben mit Ergün Bau!</p>
+                </div>
+                <div class="about-image">
+                    <figure>
+                        <img src="mehmeterguen.png" alt="Mehmet Ergün">
+                        <figcaption>Mehmet Ergün<br>Geschäftsführer des Unternehmens</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <p>Bereit, Ihr nächstes Bauprojekt zu starten? Kontaktieren Sie uns noch heute!</p>
+            <a href="#contact">Kontaktieren</a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="content-section">
+            <h2>Unsere Dienstleistungen</h2>
+            <ul class="services-list">
+                <li>Bausanierung</li>
+                <li>Trockenbau</li>
+                <li>Umbau</li>
+                <li>Innenausbau</li>
+                <li>Renovierung</li>
+                <li>Technischer Ausbau</li>
+                <li>Bad & WC</li>
+                <li>Maler & Lackierung</li>
+                <li>Fenster & Türen</li>
+                <li>Isolierung</li>
+                <li>Fliesen & Naturstein</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section with collapsible images -->
+        <section id="projects" class="content-section">
+	<h2>Unsere Projekte (Beispiele) </h2>
+                <ul class="projects-list">
+                    <li><img src="bad.JPG" alt="Badezimmer Bau"></li>
+                    <li><img src="badezimmer.JPG" alt="Badezimmer Komplett"></li>
+                    <li><img src="dachboden.JPG" alt="Dachboden Ausbau"></li>
+                    <li><img src="saule.JPG" alt="Küchenumbau mit Säule"></li>
+                    <li><img src="treppen.JPG" alt="Treppen Renovierung"></li>
+                    <li><img src="wc.JPG" alt="WC Umbau"></li>
+                    <li><img src="zimmer.JPG" alt="Wohnzimmer Renovierung"></li>
+                    <li><img src="dusche.jpg" alt="Dusche Installation"></li>
+                    <li><img src="balkon.jpg" alt="Balkon Installation"></li>
+ 	</ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+    <h2>Kontaktieren Sie uns</h2>
+    <p><strong>Adresse:</strong> Vieringhausen 15, 42857 Remscheid</p>
+    <p><strong>Telefon:</strong> 02191 37 68 440<br><strong>Mobil:</strong> +49 163 6092617</p>
+    <p><strong>E-Mail:</strong> ergun.bau@gmail.com</p>
+    <a href="tel:+491636092617">
+        <button style="padding: 10px 20px; background-color: #d32f2f; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+            Mobilnummer anrufen
+        </button>
+    </a>
+</section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ergün Bau GmbH - Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+</html>
